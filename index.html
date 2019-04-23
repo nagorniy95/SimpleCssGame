@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="My css game. Try your luck!">
+    <title>CSS Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- Page preload – message -->
+    <div id="p_pre">
+        <div class="contpre">
+            <h1>Kill the UFO</h1>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <div class="time_left">
+            <span></span>
+        </div>
+
+        <div class="gameover">
+            <span class="game_over">Game over</span>
+            <button type="button" onclick="start_again()" id="start_again">Strart again</button>
+        </div>
+
+        <input class="input-circle input-circle1" type="radio" id="circle1">
+        <input class="input-circle input-circle2" type="radio" id="circle2">
+        <input class="input-circle input-circle3" type="radio" id="circle3">
+        <input class="input-circle input-circle4" type="radio" id="circle4">
+        <input class="input-circle input-circle5" type="radio" id="circle5">
+        <input class="input-circle input-circle6" type="radio" id="circle6">
+
+        <label for="circle1" class="ufo ufo1"></label>
+        <label for="circle2" class="ufo ufo2"></label>
+        <label for="circle3" class="ufo ufo3"></label>
+        <label for="circle4" class="ufo ufo4"></label>
+        <label for="circle5" class="ufo ufo5"></label>
+        <label for="circle6" class="ufo ufo6"></label>
+
+        <div class="total_scores">SCORE: </div>
+    </div>
+    <footer id="footer">
+        <p>&copy; 2018 Artem Nahornyi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
